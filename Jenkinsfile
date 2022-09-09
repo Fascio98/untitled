@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Stage1') {
+    stage('Build') {
       steps {
-        powershell 'mvn clean test'
+        sh 'npm install'
       }
     }
 
